@@ -1,0 +1,288 @@
+
+ @font-face{                               
+  font-family:'Kaushan Script';
+  font-weight: 400;
+  src: url('../fonts/kaushan-script-400.woff') format('woff');                
+} 
+
+@font-face{                               
+  font-family:'Montserrat';
+  font-weight: 400;
+  src: url('../fonts/montserrat-400.woff') format('woff');                
+} 
+
+@font-face{                               
+  font-family:'Montserrat';
+  font-weight: 700;
+  src: url('../fonts/montserrat-700.woff') format('woff');                
+} 
+
+@font-face{                               
+  font-family:'Dr Sugiyama';
+  font-weight: 300;
+  src: url('../fonts/dr-sugiyama-300.woff') format('woff');                
+} 
+
+@font-face{                               
+  font-family:'Roboto';
+  font-weight: 400;
+  src: url('../fonts/roboto-400.woff2') format('woff2');                
+} 
+
+
+ .container{                           
+  width: 940px;                         /* ширина  контейнера */
+  margin: 0 auto;                        /* по  вертикали  ноль  по  ширине  авто  */
+}
+
+       /* HEDER */
+
+.page-nav{
+  padding-top:43px;
+  padding-bottom: 10px;
+  display: flex;                    
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+} 
+
+.site-logo{
+  display: block;                        /*  делаем  елемент  блочным  */
+  font-family:'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 26px;                       /* выбираем  размер  для  шрифта */
+  line-height: 30px;                  /*  размер  строковой  линии  */
+  color: #fed136;                      /* указываем  цвет  для  шрифта */
+}
+
+.site-navigation{
+  display: flex;                    
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+  list-style: none;                    /*  убераем  оформление  списка  ( точки )  */
+  min-width: 482px;  
+  padding-top: 0px;
+}
+
+.site-navigation a{
+  display: block;
+  font-family:'Montserrat';
+  font-weight: 400;
+  font-size: 14px;                     /* размер  шрифта  текста  */ 
+  line-height: 30px;                  /*  размер  строковой  линии  */
+  text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+  text-decoration: none ;              /*  убераем  подчеркивание  */
+  color: #222222;                    /*  цвет  текста  */
+  transition: color  200ms linear;
+}
+
+.site-navigation a:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+.site-navigation a:focus{      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+    color: #fed136;
+  }
+
+                 /* MAIN */   
+              /* SPISOC 1 */
+
+.nazva{
+  padding-top:105px;
+  padding-bottom: 63px; 
+}
+
+.nazva-a{
+  font-family:'Montserrat';
+  font-weight: 700;
+  font-size: 40px;                     /* размер  шрифта  текста  */ 
+  line-height: 40px;                  /*  размер  строковой  линии  */
+  text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+  text-align: center;
+  color: #222222;                    /*  цвет  текста  */
+}
+
+.nazva-b{
+  font-family:'Dr Sugiyama';
+  font-weight: 300;
+  font-size: 16px;                     /* размер  шрифта  текста  */ 
+  line-height: 46px;                  /*  размер  строковой  линии  */
+  text-align: center;
+  color: #777777;                    /*  цвет  текста  */
+}
+
+      /* Ul */
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;      /*  растянуть  елементы  равномерно  */
+  margin: 0;
+  padding: 0;
+  padding-bottom: 115px;
+}
+
+  .features-list-item{
+    position: relative;
+    flex-basis: 290px;    /*  ширина  лишки  */
+    flex-grow: 0;           /*  запрещяем  расти  */
+    flex-shrink: 0;        /*  запрещяем  зжиматся  */
+    padding-top: 84px;
+  }
+
+  
+  .features-p{
+    margin: 0;
+    font-family:'Montserrat';
+    font-weight: 700;
+    font-size: 18px;                     /* размер  шрифта  текста  */ 
+    line-height: 43px;                  /*  размер  строковой  линии  */
+    text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+    text-align: center;
+    color: #222222;                    /*  цвет  текста  */
+  }
+ 
+   .features-pp{
+    margin: 0;
+    padding: 0;
+    display: block;                        /*  делаем  елемент  блочным  */
+    font-family:'Roboto';
+    font-weight: 400;
+    font-size: 14px;                       /* выбираем  размер  для  шрифта */
+    line-height: 22px;                  /*  размер  строковой  линии  */
+    text-align: center;
+    color: #777777;                      /* указываем  цвет  для  шрифта */
+   }
+
+   .features-list-item::before{
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-repeat: no-repeat;
+    background-position: center;                        /* расположение  по  центру  фото  */
+    top: 0px;
+    left: 108px;
+}
+   .icon1::before{
+    background-image: url(../img/1.png);
+  }
+  .icon2::before{
+    background-image: url(../img/2.png);
+  }
+  .icon3::before{
+    background-image: url(../img/3.png);
+  }
+  
+
+      /* SPISOC 2 */
+
+      .collor{
+        color: #ffffff;
+      }
+
+      .collor-s{
+        color: #777777;
+      }
+
+      .singup-form{
+        padding-bottom: 115px;
+      }
+
+      .forma-a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 212px;
+      }
+      
+      .forma-a input{
+        border: none;
+        width: 435px;
+        height: 50px;
+        border: 1px solid #717171;
+        border-radius: 3px;            /* задайом закругление углов бордера */
+        font-family:'Montserrat';
+        font-weight: 700;
+        font-size: 14px;                     /* размер  шрифта  текста  */ 
+        text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+        text-align: left;
+        padding-left: 20px;
+     }
+
+     .form-b{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+     }
+
+     .form-b textarea{
+      border: none;
+      border: 1px solid #717171;
+      border-radius: 3px;            /* задайом закругление углов бордера */
+      font-family:'Montserrat';
+      font-weight: 700;
+      font-size: 14px;                     /* размер  шрифта  текста  */ 
+      line-height: 14px;                  /*  размер  строковой  линии  */
+      text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 19px;
+      width: 435px;
+      height: 190px;
+     }
+
+     .buton-a{
+       border: none;
+       font-family:'Montserrat';
+      font-weight: 700;
+      font-size: 18px;                     /* размер  шрифта  текста  */ 
+      line-height: 65px;                  /*  размер  строковой  линии  */
+      text-transform: uppercase ;          /*  зделать  текст  с  большой  буквой  */
+      text-align: center;
+      background-color: #fed136;
+      color: #ffffff;
+      width: 240px;
+      height: 65px;
+      padding: 0;
+      border-radius: 3px;            /* задайом закругление углов бордера */
+      transition:  200ms linear;
+     }
+     .buton-b{
+      display: flex;
+      justify-content: center;
+     }
+      
+     .forma-a input[type="text"]:focus:valid{
+      outline: 3px solid #00ff00;
+   }
+  
+     .forma-a input[type="text"]:focus:invalid{
+      outline: 3px solid #ff0000;
+   }
+
+   .forma-a input[type="email"]:focus:valid{
+    outline: 3px solid #00ff00;
+ }
+   .forma-a input[type="email"]:focus:invalid{         
+    outline: 3px solid #ff0000;
+ }
+
+ .form-b textarea:focus:valid{
+  outline: 3px solid #00ff00;
+}
+ .form-b textarea:focus:invalid{
+  outline: 3px solid #ff0000;
+}
+
+.forma-a input[ type="subject"]:focus{
+  outline: 3px solid #717171;
+}
+
+.buton-a:hover,                     /*  задайом  цвет  при  наведении  курсора  */
+.buton-a:focus{                     /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+  background-color: #000000;    /*  задайом  цвет  фона  */
+  color: #fed136;               /*  задайом  цвет  тексту  */
+ }
+
+ .slid{
+ background-image: url(../img/4.png);
+}
+
+textarea{
+  resize: none;
+}
